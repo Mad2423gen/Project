@@ -1,5 +1,6 @@
 # Scray_cloudworks-2023-02-04
 クラウドソーシングサービス、『クラウドワークス』の新規案件情報を取得してPushbulletというアプリに通知するツールです
+
 【開発環境】
   ・"Linux Mint" VERSION="21.1 (Vera)"　with Pycharm 2022.3.2
   ・Python3.10　外部モジュールは requirements.txt参照
