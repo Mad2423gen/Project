@@ -26,8 +26,8 @@ def conf_read():
 # webページソース取得
 def websourceget(target_url):
 	# ページソース取得
-	souece = requests.get(target_url)
-	return souece
+	# souece = requests.get(target_url)
+	return requests.get(target_url)
 
 
 # タグからデータを取得、返り値はデータリスト
@@ -198,13 +198,13 @@ if __name__ == '__main__':
 	# 1 = 通常処理
 	# 2 = 初期化処理
 	if int(select_num) == 1:
-		tt = input("time interval：")
+		tt = input("time interval? sec：")
 		while True:
 			func_nomal()
 			print('Standby')
 			time.sleep(int(tt))
 	elif int(select_num) == 2:
-		tt = input("time interval：")
+		tt = input("time interval? sec：")
 		# 初期化処理　→　通常処理のループ
 		ini_func()
 		while True:
