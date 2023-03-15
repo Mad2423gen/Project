@@ -189,7 +189,8 @@ def func_menu():
 
 
 if __name__ == '__main__':
-	select_num = func_menu()
+	# select_num = func_menu()
+	select_num = 2
 	# 1 = 通常処理
 	# 2 = 初期化処理
 	if int(select_num) == 1:
