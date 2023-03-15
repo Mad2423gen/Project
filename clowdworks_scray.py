@@ -194,13 +194,16 @@ if __name__ == '__main__':
 	# 1 = 通常処理
 	# 2 = 初期化処理
 	if int(select_num) == 1:
-		tt = input("time interval? sec：")
+		# tt = input("time interval? sec：")
+		tt = 180
 		while True:
 			func_nomal()
 			print('Standby')
 			time.sleep(int(tt))
 	elif int(select_num) == 2:
-		tt = input("time interval? sec：")
+		# tt = input("time interval? sec：")
+		tt = 180
+
 		# 初期化処理　→　通常処理のループ
 		ini_func()
 		while True:
