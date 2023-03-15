@@ -6,10 +6,6 @@ import time
 from retrying import retry
 
 
-# todo: 実装後気がついたこと、【改善アイディア】　
-#  １．表示画面がそっけない、もうちょっとかっこよく　
-#  ２．ステータス画面の行がずれてる
-
 # 初期設定の指定：返り値はリスト化されたファイル名
 def conf_read():
 	# 【初期設定】----------------------------------------------------------------
@@ -19,8 +15,8 @@ def conf_read():
 	# ターゲットURLファイル
 	target_url_file = os.path.join(path, 'clowdworks_url')
 	# --------------------------------------------------------------------------
-	conf_vals = {'job_file': job_file, 'target_url_file': target_url_file}
-	return conf_vals
+	# conf_vals = {'job_file': job_file, 'target_url_file': target_url_file}
+	return {'job_file': job_file, 'target_url_file': target_url_file}
 
 
 # webページソース取得
@@ -96,8 +92,7 @@ def send_bullet(msg_list):
 		for MessgeList in msg_list:
 			# 第一引数はタイトル、第二引数は本文
 			print(f'busy: {MessgeList[0]}')
-			push = pd.push_note('Scrayping-tool',
-								f"{MessgeList[0]}  {MessgeList[1]} \n{MessgeList[2]}")
+			push = pd.push_note('Scrayping-tool', f"{MessgeList[0]}  {MessgeList[1]} \n{MessgeList[2]}")
 		print('		Msg send Completed')
 
 
