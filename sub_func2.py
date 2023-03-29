@@ -61,7 +61,7 @@ class UrlAndScray:
             # Publication Date (掲載日)
             publication_date = res.select('tbody.thead_nowrap > tr > td')
             # title, submission, reward, publication_date
-            product_page_datas.append([title3, submission.text, reward.text, publication_date[2].text])
+            product_page_datas.append([title3, submission.text, reward.text, publication_date[2].text, url])
 
         print('mainpage scray done')
         return product_page_datas
@@ -111,7 +111,8 @@ def send_pushbullet(msg_list):
         # 送信
         for MessgeList in msg_list:
             # 第一引数はタイトル、第二引数は本文、第三引数はURL
-            msg = f"{MessgeList[0]}\n募集人数：{MessgeList[1]}\n報酬：{MessgeList[2]}\n掲載日：{MessgeList[3]}\n"
+            msg = f"{MessgeList[0]}\n募集人数：{MessgeList[1]}\n" \
+                  f"報酬：{MessgeList[2]}\n掲載日：{MessgeList[3]}\n {MessgeList[4]}"
             push = pd.push_note('Scrayping-tool', msg)
         print('Msg send Completed')
 
