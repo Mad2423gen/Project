@@ -69,7 +69,7 @@ if __name__ == '__main__':
     if mode == 0:
         pass
     else:
-        os.path.isfile(csv_file2) or os.remove(csv_file2)
+        os.path.isfile(csv_file2) and os.remove(csv_file2)
 
     while True:
         now = datetime.datetime.now()
