@@ -1,2 +1,4 @@
-https://crowdworks.jp/public/jobs/search?search%5Bkeywords%5D=%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0&keep_search_criteria=true&order=new&hide_expired=true
-https://crowdworks.jp/public/jobs/search?keep_search_criteria=true&order=new&hide_expired=true&search%5Bkeywords%5D=Python
+https://crowdworks.jp/public/jobs/search?search%5Bkeywords%5D=Python&keep_search_criteria=true&order=new&hide_expired=true
+https://crowdworks.jp/public/jobs/search?order=new&search%5Bkeywords%5D=%E3%82%B9%E3%82%AF%E3%83%AC%E3%82%A4%E3%83%94%E3%83%B3%E3%82%B0&ref=user_search_criteria
+https://crowdworks.jp/public/jobs/search?category_id=282&keep_search_criteria=true&order=score&hide_expired=true
+https://crowdworks.jp/public/jobs/search?skill_id=2132&keep_search_criteria=true&order=score&hide_expired=true
